@@ -109,6 +109,10 @@ select {
 
 /* ---- Bottom Form ---- */
 
+.fieldset-bottom label {
+	display: block;
+}
+
 .bottom-form {
 	border-top: 1px solid #ed5752;
 	margin-top: 30px;
