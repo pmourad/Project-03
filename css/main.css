@@ -1,10 +1,15 @@
 /* ::::: MOBILE ::::: */
 
+* {
+	box-sizing: border-box;
+}
+
 .wrapper {
 	width: 100%;
 	margin: 0 auto;
 }
 
+/* --- Header --- */
 header {
 	width: 100%;
 	margin: 0 auto;
@@ -83,10 +88,13 @@ header h1 {
 	width: 100%;
 	margin: 0 auto;
 	background-color: #f0f0f0;
-	border: none;
+	border: 2px solid #f0f0f0;
 	border-radius: 4px;
 	height: 60px;
 	margin: 10px 0;
+	font-family: 'Dosis', sans-serif;
+	font-size: 1em;
+	padding-left: 10px;
 }
 
 .input-zip {
@@ -216,6 +224,7 @@ input[type="tel"]:focus,
 textarea:focus {
 	outline: none;
 	border: 2px solid #ed5752;
+
 }
 
 /* ---- Textarea Box ---- */
@@ -246,6 +255,7 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
 	border-bottom: 4px solid #bd433f;
+	cursor: pointer;
 }
 
 /* ---- Footer ---- */
@@ -262,6 +272,41 @@ footer p {
 
 
 
+/* ::::: ::::::::::::::::::::::::: TABLET 768px ::::: */
+
+@media screen and (min-width: 768px) {
+
+	* {
+		box-sizing: border-box;
+	}
+
+	.header,
+	.top-form,
+	.bottom-form {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.top-form {
+		margin-top: 5px;
+	}
+
+	.item-name {
+		display: inline-block;
+		width: 20%;
+	}
+
+	.input-top {
+		display: inline-block;
+		width: 74%;
+
+	}
+
+	.input-zip {
+		width: 30%;
+	}
+
+}
 
 
 
@@ -269,23 +314,40 @@ footer p {
 
 
 
+/* ::::: ::::::::::::::::::::::::: DESKTOP 1024px ::::: */
+
+@media screen and (min-width: 1024px) {
+
+	* {
+		box-sizing: border-box;
+	}
 
 
+	/* --- Top Form ---- */
+	.header,
+	.top-form,
+	.bottom-form {
+		width: 60%;
+		margin: 0 auto;
+	}
 
+	.top-form {
+		margin-top: 5px;
+	}
 
+	.item-name {
+		display: inline-block;
+		width: 20%;
+	}
 
+	.input-top {
+		display: inline-block;
+		width: 74%;
 
+	}
 
-
-
-
-
-
-
-
-
-
-
-
-
+	.input-zip {
+		width: 30%;
+	}
+}
 
